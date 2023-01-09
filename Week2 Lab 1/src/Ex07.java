@@ -11,6 +11,7 @@ public class Ex07 {
         temp = x;
         x = y;
         y = temp;
+        
         System.out.println("After swap");
         System.out.println("x: "+ x);
         System.out.println("y: "+y);
