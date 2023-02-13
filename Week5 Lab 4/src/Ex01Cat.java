@@ -4,7 +4,7 @@ public class Ex01Cat {
     public String color;
 
     public void setName(String _name) {
-        name = _name;
+        this.name = _name;
     }
 
     public String getName() {

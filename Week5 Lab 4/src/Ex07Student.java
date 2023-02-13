@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class Ex07Student {
     private String id, name, department;
     private int generation;
@@ -30,23 +32,23 @@ public class Ex07Student {
 
     @Override
     public String toString() {
-        return ("(" + id + ", " + name + ", " + generation + ", " + department + ")");
+        return ("Id: " + id + ", Name: " + name + ", Generation: " + generation + ", Department: " + department + "");
     }
 
     public void setId(String id) {
-        id = id;
+        this.id = id;
     }
 
     public void setName(String name) {
-        name = name;
+        this.name = name;
     }
 
     public void setGeneration(int generation) {
-        generation = generation;
+        this.generation = generation;
     }
 
     public void setDepartment(String department) {
-        department = department;
+        this.department = department;
     }
 
     public String getId() {
@@ -71,4 +73,5 @@ public class Ex07Student {
         System.out.println("Generation: " + this.getGeneration());
         System.out.println("Department: " + this.getDepartment());
     }
+
 }

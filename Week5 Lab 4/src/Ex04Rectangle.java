@@ -18,15 +18,15 @@ public class Ex04Rectangle {
     }
 
     public void setWidth(double width) {
-        width = width;
+        this.width = width;
     }
 
     public void setHeight(double height) {
-        height = height;
+        this.height = height;
     }
 
     public void setColor(String color) {
-        color = color;
+        this.color = color;
     }
 
     public double getWidth() {

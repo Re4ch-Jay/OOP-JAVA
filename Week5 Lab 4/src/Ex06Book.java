@@ -34,19 +34,19 @@ public class Ex06Book {
     }
 
     public void setTitle(String title) {
-        title = title;
+        this.title = title;
     }
 
     public void setAuthor(String author) {
-        author = author;
+        this.author = author;
     }
 
     public void setISBN(String isbn) {
-        isbn = isbn;
+        this.isbn = isbn;
     }
 
     public void setPublishYear(int publishYear) {
-        publishYear = publishYear;
+        this.publishYear = publishYear;
     }
 
     public String getTitle() {

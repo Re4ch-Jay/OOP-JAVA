@@ -9,7 +9,7 @@ public class Ex02Dog {
     }
 
     public void setName(String name) {
-        name = name;
+        this.name = name;
     }
 
     public String getName() {

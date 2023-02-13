@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 public class Ex07Main {
     public static void main(String[] args) {
-        Ex07Student[] listStudents = new Ex07Student[5];
+        Ex07Student[] listStudents = new Ex07Student[10];
 
         fillData(listStudents);
         System.out.println();
@@ -11,7 +11,7 @@ public class Ex07Main {
         printAll(listStudents);
         System.out.println();
 
-        searchStudentById(listStudents, "A1");
+        searchStudentById(listStudents, "1");
         System.out.println();
 
         searchStudentByName(listStudents, "Jack");
@@ -36,11 +36,9 @@ public class Ex07Main {
 
             System.out.print("Enter generation: ");
             int generation = scanner.nextInt();
-
+            scanner.nextLine();
             System.out.print("Enter department: ");
             String department = scanner.nextLine();
-
-            scanner.nextLine();
 
             Ex07Student student = new Ex07Student(id, name, generation, department);
             listStudents[i] = student;
@@ -50,6 +48,7 @@ public class Ex07Main {
 
     public static void printAll(Ex07Student[] listStudents) {
         System.out.println("List of students");
+
         for (int i = 0; i < listStudents.length; i++) {
             System.out.println("Id: " + listStudents[i].getId());
             System.out.println("Name: " + listStudents[i].getName());

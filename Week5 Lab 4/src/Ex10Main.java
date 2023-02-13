@@ -24,7 +24,7 @@ public class Ex10Main {
         Scanner scanner2 = new Scanner(System.in);
         System.out.print("Enter brand name: ");
         String brand2 = scanner2.nextLine();
-        Ex10Computer computer2 = new Ex10Computer(brand);
+        Ex10Computer computer2 = new Ex10Computer(brand2);
         System.out.println();
         computer2.printInfo();
 

@@ -23,7 +23,7 @@ public class Ex06Main {
         System.out.println();
     }
 
-    public static void fillData(Ex06Book[] listBooks) {
+    static void fillData(Ex06Book[] listBooks) {
         Scanner scanner = new Scanner(System.in);
         for (int i = 0; i < listBooks.length; i++) {
 
@@ -47,41 +47,39 @@ public class Ex06Main {
 
     }
 
-    public static void printAll(Ex06Book[] listBooks) {
+    static void printAll(Ex06Book[] listBooks) {
         System.out.println("List of books");
         for (int i = 0; i < listBooks.length; i++) {
-            System.out.println("Author: " + listBooks[i].getAuthor());
-            System.out.println("Title: " + listBooks[i].getTitle());
-            System.out.println("ISBN: " + listBooks[i].getISBN());
-            System.out.println("Publish year: " + listBooks[i].getPublishYear());
+            print(listBooks, i);
         }
     }
 
-    public static void searchBookByTitle(Ex06Book[] listBooks, String title) {
+    static void searchBookByTitle(Ex06Book[] listBooks, String title) {
         System.out.println("Search Book by title");
         for (int i = 0; i < listBooks.length; i++) {
             if (title.equals(listBooks[i].getTitle())) {
-                System.out.println("Author: " + listBooks[i].getAuthor());
-                System.out.println("Title: " + listBooks[i].getTitle());
-                System.out.println("ISBN: " + listBooks[i].getISBN());
-                System.out.println("Publish year: " + listBooks[i].getPublishYear());
+                print(listBooks, i);
             }
         }
     }
 
-    public static void searchBookByISBN(Ex06Book[] listBooks, String isbn) {
+    static void print(Ex06Book[] listBooks, int i) {
+        System.out.println("Author: " + listBooks[i].getAuthor());
+        System.out.println("Title: " + listBooks[i].getTitle());
+        System.out.println("ISBN: " + listBooks[i].getISBN());
+        System.out.println("Publish year: " + listBooks[i].getPublishYear());
+    }
+
+    static void searchBookByISBN(Ex06Book[] listBooks, String isbn) {
         System.out.println("Search Book by ISBN");
         for (int i = 0; i < listBooks.length; i++) {
             if (isbn.equals(listBooks[i].getISBN())) {
-                System.out.println("Author: " + listBooks[i].getAuthor());
-                System.out.println("Title: " + listBooks[i].getTitle());
-                System.out.println("ISBN: " + listBooks[i].getISBN());
-                System.out.println("Publish year: " + listBooks[i].getPublishYear());
+                print(listBooks, i);
             }
         }
     }
 
-    public static void sortByISBN(Ex06Book[] listBooks) {
+    static void sortByISBN(Ex06Book[] listBooks) {
 
         System.out.println("Sort books by ISBN");
         System.out.println("Before sort");

@@ -1,4 +1,4 @@
-public class Ex08Dog {
+class Ex08Dog {
     private String name, owner;
     private double weight;
 
@@ -22,15 +22,15 @@ public class Ex08Dog {
     }
 
     public void setName(String name) {
-        name = name;
+        this.name = name;
     }
 
     public void setOwner(String owner) {
-        owner = owner;
+        this.owner = owner;
     }
 
     public void setWeight(double weight) {
-        weight = weight;
+        this.weight = weight;
     }
 
     public String getName() {
@@ -48,7 +48,7 @@ public class Ex08Dog {
     public void printInfo() {
         System.out.println("Dog info");
         System.out.println("Name: " + this.getName());
-        System.out.println("Owner: " + this.getOwner());
         System.out.println("Weight: " + this.getWeight());
+
     }
 }

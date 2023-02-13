@@ -17,15 +17,15 @@ public class Ex03Book {
     }
 
     public void setTitle(String title) {
-        title = title;
+        this.title = title;
     }
 
     public void setAuthor(String author) {
-        author = author;
+        this.author = author;
     }
 
     public void setISBN(int isbn) {
-        isbn = isbn;
+        this.isbn = isbn;
     }
 
     public String getTitle() {

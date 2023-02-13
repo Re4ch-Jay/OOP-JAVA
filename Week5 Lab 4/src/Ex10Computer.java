@@ -24,19 +24,19 @@ public class Ex10Computer {
     }
 
     public void setBrand(String brand) {
-        brand = brand;
+        this.brand = brand;
     }
 
     public void setModel(String model) {
-        model = model;
+        this.model = model;
     }
 
     public void setRAMSize(int RAMSize) {
-        RAMSize = RAMSize;
+        this.RAMSize = RAMSize;
     }
 
     public void setHDDSize(int HDDSize) {
-        HDDSize = HDDSize;
+        this.HDDSize = HDDSize;
     }
 
     public String getBrand() {

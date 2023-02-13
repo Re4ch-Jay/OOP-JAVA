@@ -19,19 +19,19 @@ public class Ex05Student {
     }
 
     public void setFirstName(String firstName) {
-        firstName = firstName;
+        this.firstName = firstName;
     }
 
     public void setLastName(String lastName) {
-        lastName = lastName;
+        this.lastName = lastName;
     }
 
     public void setStudentId(String student_id) {
-        student_id = student_id;
+        this.student_id = student_id;
     }
 
     public void setAddresss(String address) {
-        address = address;
+        this.address = address;
     }
 
     public String getFirstName() {
