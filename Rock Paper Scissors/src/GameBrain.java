@@ -1,19 +1,22 @@
 class GameBrain {
 
-    private int rock = 1;
-    private int paper = 2;
-    private int scissors = 3;
-    private int aiChoice, humanChoice;
+    final private int rock = 1;
+    final private int paper = 2;
+    final private int scissors = 3;
+    final private int aiChoice, humanChoice;
 
-    GameBrain() {
-
-    }
-
+    /**
+     * @param aiChoice
+     * @param humanChoice
+     */
     GameBrain(int aiChoice, int humanChoice) {
         this.aiChoice = aiChoice;
         this.humanChoice = humanChoice;
     }
 
+    /**
+     * @return
+     */
     int getAiChoice() {
         if (this.aiChoice == 1) {
             return rock;
@@ -24,10 +27,16 @@ class GameBrain {
         }
     }
 
+    /**
+     * @return
+     */
     int getHumanChoice() {
         return this.humanChoice;
     }
 
+    /**
+     * @return
+     */
     String checkWinner() {
         getAiChoice();
         getHumanChoice();
@@ -53,6 +62,18 @@ class GameBrain {
         } else {
             return "";
         }
+    }
+
+    public int getRock() {
+        return rock;
+    }
+
+    public int getPaper() {
+        return paper;
+    }
+
+    public int getScissors() {
+        return scissors;
     }
 
 }

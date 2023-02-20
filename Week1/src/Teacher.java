@@ -1,7 +1,7 @@
 public class Teacher extends Student {
     double salary;
 
-    public Teacher(double salary, String name, String major, String grade, int age){
+    public Teacher(double salary, String name, String major, String grade, int age) {
         super(name, major, grade, age);
         this.salary = salary;
     }
@@ -10,7 +10,7 @@ public class Teacher extends Student {
         return salary;
     }
 
-    public void setSalary() {
+    public void setSalary(double salary) {
         this.salary = salary;
     }
 
