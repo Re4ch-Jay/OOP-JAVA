@@ -4,5 +4,7 @@ public class App {
         // Child child = new Child();
         Parent parent = new Parent();
 
+        System.out.println(2 + 1.0);
+
     }
 }

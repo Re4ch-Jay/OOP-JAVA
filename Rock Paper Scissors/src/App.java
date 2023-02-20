@@ -18,5 +18,6 @@ public class App {
         System.out.println("Ai choose: " + gameBrain.getAiChoice());
         System.out.println("You choose: " + gameBrain.getHumanChoice());
         System.out.println(gameBrain.checkWinner());
+
     }
 }
